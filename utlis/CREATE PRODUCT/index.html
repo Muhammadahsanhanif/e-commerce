@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT</title>
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    
+  <body class="bg-gray-100">
+    <div style="width: 60%;" class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold mb-6 text-center">CREATE PRODUCT</h1>
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <form id="product_form">
+          <!-- Event Image Upload -->
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventImage"
+              > PRODUCT</label
+            >
+            <input
+              type="file"
+              id="product_Image"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          <!-- Event Title -->
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventTitle"
+              >PRODUCT TITLE</label
+            >
+            <input
+              type="text"
+              id="product_Title"
+              placeholder="Enter event title"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventTitle"
+              >PRODUCT DESCRIPTION</label
+            >
+            <textarea
+              type="text"
+              id="product_Desc"
+              placeholder="Enter event Description"
+              class="w-full px-3 py-2 border rounded-md"
+            >
+            </textarea>
+          </div>
+
+         
+           
+
+          <!-- Event Date -->
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventDate"
+              >PRODUCT DATE</label
+            >
+            <input
+              type="date"
+              id="product_date"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+<!-- 
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventDate"
+              >PRODUCT PRICE</label
+            >
+            <input
+              type="price"
+              id="product_price"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div> -->
+        
+
+          <!-- Submit Button -->
+          <div class="flex justify-center">
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+            >
+              CREATE PRODUCT
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <script type="module" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+
+</body>
+</html>

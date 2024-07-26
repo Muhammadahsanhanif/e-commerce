@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+
+    <!-- Flowbite CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Navbar Styles */
+        .navbar {
+            background-color: #ffffff; /* White background */
+            border-bottom: 1px solid #e2e8f0; /* Light gray border bottom */
+            padding: 1rem 2rem; /* Padding inside navbar */
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            height: 2rem; /* Adjust the height of the logo */
+            margin-right: 0.5rem; /* Space between logo and text */
+        }
+
+        .navbar-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-menu a {
+            color: #4a5568; /* Dark gray text */
+            text-decoration: none;
+            margin-left: 1.5rem; /* Space between menu items */
+        }
+
+        .navbar-menu a:hover {
+            color: #2d3748; /* Darken text on hover */
+        }
+
+        /* Avatar Styles */
+        .avatar {
+            width: 40px; /* Size of the avatar */
+            height: 40px; /* Size of the avatar */
+            border-radius: 50%; /* Rounded shape for avatar */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 1.5rem;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: #4a5568;
+        }
+
+        .card a {
+            color: #3182ce; /* Blue color for links */
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            background-color: #3182ce; /* Blue background */
+            color: #ffffff; /* White text */
+            padding: 0.75rem 1.5rem; /* Padding inside button */
+            border-radius: 4px; /* Rounded corners */
+            text-decoration: none;
+            /* transition: background-color 0.3s ease; */
+        }
+
+        .btn:hover {
+            background-color: #2c5282; /* Darker blue on hover */
+        }
+
+        /* Image Styles */
+        .card img {
+            width: 100%; /* Make image fill its container */
+            border-radius: 8px; /* Rounded corners */
+            margin-bottom: 1rem; /* Space below image */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #2d3748; /* Dark background color */
+            color: #ffffff; /* White text color */
+            padding: 2rem 0; /* Padding top and bottom */
+            text-align: center; /* Center align text */
+            margin-top: 2rem; /* Space from content above */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container mx-auto">
+            <div class="navbar-menu flex items-center justify-between">
+                <!-- Logo and Menu -->
+                <a href="#" class="navbar-brand flex items-center space-x-2">
+                    <img src="./71bhS34rZSL.jpg" alt="Flowbite Logo" class="h-8 full rounded" ro>
+                    <span class="text-xl font-semibold">TOY STORE</span>
+                </a>
+    
+                <!-- Responsive Navbar Links -->
+                <div class="hidden sm:flex items-center space-x-6">
+                    <a href="./utlis/cart/index.html" class="text-blue-600 hover:underline">CART</a>
+                    <a href="/utlis/CREATE PRODUCT/index.html" class="text-blue-600 hover:underline">CREAATE PRODUCT</a>
+                    <a href="./utlis/MY PRODUCT/INDEX.HTML" class="text-blue-600 hover:underline">MY PRODUCT</a>
+                    <a href="./auth/login/login.html" class="text-blue-600 hover:underline" id="login_link">Login</a>
+                    <a href="./auth/signup/signup.html" class="text-blue-600 hover:underline" id="login_link">signup</a>
+                    <a href="#" class="text-blue-600 hover:underline" id="logout_btn">Logout</a>
+                    <img src="./71bhS34rZSL.jpg" alt="Avatar" class="avatar" id="user_img">
+                </div>
+    
+                <!-- Hamburger Menu for Small Screens -->
+                <button class="sm:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+   
+
+    
+
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./istockphoto-182414564-170667a.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./photo-1613536491198-a0afa1916b3b.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./107167664-1671208425691-gettyimages-1231367750-BC_StarwarsBabyYoda_9675.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./photo-1609395464110-7116592351c6.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./71bhS34rZSL.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+    
+
+    <div class="container mx-auto px-4 py-8">
+
+        <div id="product_container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            
+
+
+            
+         
+                
+            <!-- <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="${banner}" alt="Event Image" class="w-full h-48 object-cover" />
+                <div class="p-4">
+                  <h2 class="text-xl font-bold mb-2">${title}</h2>
+                  <p class="text-gray-600 mb-2">Description: ${description}</p>
+                  <p class="text-gray-600 mb-2">Date: ${date}</p>
+                  <p class="text-gray-600 mb-2">Creator: ${createdByEmail}</p>
+                  <div class="flex justify-between items-center"> 
+                    <button id="order_btn" class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </div> -->
+                   
+                </div>        </div>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mx-auto">
+            <p>&copy; 2024 E-Commerce. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+</html>
